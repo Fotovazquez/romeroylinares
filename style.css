@@ -542,7 +542,7 @@ ul { list-style: none; }
 
 /* Hero logo above title */
 .hero-logo {
-  height: clamp(105px, 8vw, 140px);
+  height: clamp(90px, 8vw, 140px);
   width: auto;
   object-fit: contain;
   margin-bottom: 0.6rem;
@@ -583,7 +583,7 @@ ul { list-style: none; }
   border: 1.5px solid var(--clr-gold);
   color: var(--clr-gold-light);
   font-family: var(--font-body);
-  font-size: clamp(0.72rem, 1.6vw, 0.9rem);
+  font-size: clamp(0.55rem, 1.6vw, 0.9rem);
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
