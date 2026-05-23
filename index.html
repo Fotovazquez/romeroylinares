@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Moda flamenca exclusiva en Tomares, Sevilla. Diseños propios y mantones artesanales de Romero y Linares. Atendemos con cita previa." />
+  <meta name="keywords" content="moda flamenca, trajes de flamenca, mantones, Sevilla, Tomares, diseño exclusivo, Romero y Linares" />
+  <meta property="og:title" content="Romero y Linares · Moda Flamenca Exclusiva" />
+  <meta property="og:description" content="Diseños propios y producción limitada. Moda flamenca de alta costura en Tomares, Sevilla." />
+  <title>Romero y Linares · Moda Flamenca Exclusiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menú principal">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#inicio" class="nav-logo" aria-label="Inicio - Romero y Linares">
+        
+        <span class="nav-owner-name">Inmaculada Romero Linares</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#disenios" class="nav-link">Diseños</a></li>
+        <li><a href="#mantones" class="nav-link">Mantones</a></li>
+        <li><a href="#resenas" class="nav-link">Reseñas</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li>
+          <a href="#cita" class="nav-cta" id="nav-cta-btn">Cita Previa</a>
+        </li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       MOBILE MENU OVERLAY
+  ═══════════════════════════════════════ -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="mobile-menu-inner">
+      <img src="img/logo.png" alt="Romero y Linares" class="mobile-logo" />
+      <p class="mobile-owner">Inmaculada Romero Linares</p>
+      <ul class="mobile-nav-list" role="list">
+        <li>
+          <a href="#disenios" class="mobile-nav-link" id="mob-link-1">
+            <span class="mob-icon">✦</span> Diseños
+          </a>
+        </li>
+        <li>
+          <a href="#mantones" class="mobile-nav-link" id="mob-link-2">
+            <span class="mob-icon">✦</span> Mantones
+          </a>
+        </li>
+        <li>
+          <a href="#cita" class="mobile-nav-link" id="mob-link-3">
+            <span class="mob-icon">✦</span> Cita Previa
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/romeroylinares" target="_blank" rel="noopener" class="mobile-nav-link" id="mob-link-ig">
+            <svg class="mob-ig-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Instagram
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-address">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mob-addr-icon" aria-hidden="true">
+          <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.003 3.5-4.697 3.5-8.327a8 8 0 10-16 0c0 3.63 1.556 6.326 3.5 8.327a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742z" clip-rule="evenodd"/>
+          <path fill-rule="evenodd" d="M12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+        </svg>
+        <span>Rosa Luxemburgo 2, Tomares<br/>Sevilla 41940</span>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ═══════════════════════════════════════
+       HERO — VIDEO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="inicio" aria-label="Sección principal">
+    <div class="hero-video-wrap">
+      <video
+        class="hero-video"
+        id="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source src="img/videosuperior.mp4" type="video/mp4" />
+        Tu navegador no soporta vídeo HTML5.
+      </video>
+      <!-- Left fog overlay -->
+      <div class="hero-fog" aria-hidden="true"></div>
+      <!-- Dark gradient bottom -->
+      <div class="hero-bottom-grad" aria-hidden="true"></div>
+    </div>
+
+    <!-- Top-left content -->
+    <div class="hero-content-left">
+      <img src="img/logo.png" alt="Romero y Linares" class="hero-logo" />
+      <h1 class="hero-title">Moda flamenca<br /><em>exclusiva</em></h1>
+    </div>
+
+    <!-- Bottom-left tags -->
+    <div class="hero-tags-bottom">
+      <span class="hero-tag">Diseño propio</span>
+      <span class="hero-tag">Producción limitada</span>
+    </div>
+
+  
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION DIVIDER — BRAND STATEMENT
+  ═══════════════════════════════════════ -->
+  <section class="brand-statement" aria-label="Declaración de marca">
+    <div class="brand-statement-inner">
+      <p class="brand-tagline">Alta costura flamenca<br /> hecha con <em>alma</em> y <em>arte</em></p>
+      <div class="gold-divider" aria-hidden="true"></div>
+      <p class="brand-sub">Cada diseño nace de la pasión por el flamenco y el respeto por la artesanía</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       MANTONES SECTION
+  ═══════════════════════════════════════ -->
+  <section class="collection-section" id="mantones" aria-label="Colección de mantones">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Colección</span>
+        <h2 class="section-title">Mantones</h2>
+        <p class="section-subtitle">Piezas únicas bordadas a mano, arte textil de tradición centenaria</p>
+        <div class="gold-divider" aria-hidden="true"></div>
+      </div>
+      <div class="cards-grid" id="mantones-grid" role="list">
+        <!-- Card 1 -->
+        <article class="card" data-images='["img/manton.webp","img/manton2.webp","img/manton3.webp","img/manton4.webp"]' role="listitem">
+          <div class="card-img-wrap">
+            <img src="img/manton.webp" alt="Mantón de Manila artesanal" class="card-img" loading="lazy" />
+            <div class="card-glow" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mantón de Manila</h3>
+            <p class="card-desc">Bordado artesanal en seda pura</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card" data-images='["img/manton2.webp","img/manton3.webp","img/manton4.webp","img/manton.webp"]' role="listitem">
+          <div class="card-img-wrap">
+            <img src="img/manton2.webp" alt="Mantoncillo bordado exclusivo" class="card-img" loading="lazy" />
+            <div class="card-glow" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mantoncillo</h3>
+            <p class="card-desc">Elegancia en cada puntada</p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card" data-images='["img/manton3.webp","img/manton4.webp","img/manton.webp","img/manton2.webp"]' role="listitem">
+          <div class="card-img-wrap">
+            <img src="img/manton3.webp" alt="Mantón flamenco de colores" class="card-img" loading="lazy" />
+            <div class="card-glow" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mantón Feria</h3>
+            <p class="card-desc">Para brillar en la caseta</p>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card" data-images='["img/manton4.webp","img/manton.webp","img/manton2.webp","img/manton3.webp"]' role="listitem">
+          <div class="card-img-wrap">
+            <img src="img/manton4.webp" alt="Mantón exclusivo de alta costura" class="card-img" loading="lazy" />
+            <div class="card-glow" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Edición Especial</h3>
+            <p class="card-desc">Diseño exclusivo y limitado</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       DISEÑOS SECTION — polka dot bg
+  ═══════════════════════════════════════ -->
+  <section class="collection-section polka-bg" id="disenios" aria-label="Colección de diseños">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Alta Costura</span>
+        <h2 class="section-title">Diseños</h2>
+        <p class="section-subtitle">Trajes de flamenca creados con amor, para mujeres que marcan tendencia</p>
+        <div class="gold-divider" aria-hidden="true"></div>
+      </div>
+      <div class="cards-grid" id="disenios-grid" role="list">
+        <!-- Cards will be populated by JS with random f*.webp images -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CITA PREVIA SECTION
+  ═══════════════════════════════════════ -->
+  <section class="cita-section" id="cita" aria-label="Solicitar cita previa">
+    <div class="container cita-inner">
+      <div class="cita-text">
+        <span class="section-label">Atención personalizada</span>
+        <h2 class="section-title">Cita Previa</h2>
+        <p class="cita-desc">Cada clienta merece una atención única. Te asesoramos de forma personalizada para que tu traje o mantón sea exactamente como lo sueñas.</p>
+        <div class="cita-contact-links">
+          <a href="tel:+34606590620" class="cita-link" id="cita-phone-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="cita-icon" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" /></svg>
+            606 590 620
+          </a>
+          <a href="https://wa.me/34606590620" target="_blank" rel="noopener" class="cita-link" id="cita-wa-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="cita-icon" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.526 5.833L.057 23.215a.75.75 0 00.916.916l5.382-1.469A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.72 9.72 0 01-4.953-1.353l-.355-.21-3.676 1.003 1.003-3.676-.21-.355A9.72 9.72 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="cita-img-wrap">
+        <img src="img/sensacion1.webp" alt="Diseño flamenca Romero y Linares" class="cita-img" loading="lazy" />
+        <div class="cita-img-frame" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       GOOGLE REVIEWS
+  ═══════════════════════════════════════ -->
+  <section class="reviews-section" id="resenas" aria-label="Reseñas de Google">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Lo que dicen de nosotras</span>
+        <h2 class="section-title">Reseñas</h2>
+        <div class="reviews-rating-global" aria-label="Valoración media: 5 de 5 estrellas">
+          <div class="stars-wrap" aria-hidden="true">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-text">5.0 · Google Reviews</span>
+        </div>
+        <div class="gold-divider" aria-hidden="true"></div>
+      </div>
+
+      <div class="reviews-carousel-wrap">
+        <div class="reviews-track" id="reviews-track" role="list">
+
+          <article class="review-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">E</div>
+              <div class="review-meta">
+                <strong class="review-author">Esther Macías</strong>
+                <span class="review-date">Hace 3 años</span>
+              </div>
+              <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p class="review-text">«Estaba en búsqueda y captura de un mantoncillo rojo para la Feria de Abril y después de ver muchas tiendas, encontré a Romero y Linares. El trato fue exquisito desde el principio, me mandaron varias opciones...»</p>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">P</div>
+              <div class="review-meta">
+                <strong class="review-author">Pilar Cortés</strong>
+                <span class="review-date">Hace 2 años</span>
+              </div>
+              <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p class="review-text">«La mejor tienda de moda flamenca de Sevilla!! Mis trajes son de aquí porque el trato es increíble, además los mantones que tienen no pueden ser más originales y bonitos.»</p>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">E</div>
+              <div class="review-meta">
+                <strong class="review-author">Elisa García Rodríguez</strong>
+                <span class="review-date">Hace 6 años</span>
+              </div>
+              <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p class="review-text">«Un gusto exquisito con estilo para elegir y orientar en detalles, telas y complementos. Muy muy buenas telas y acabado.»</p>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">M</div>
+              <div class="review-meta">
+                <strong class="review-author">María José Jarén</strong>
+                <span class="review-date">Hace 7 años</span>
+              </div>
+              <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p class="review-text">«Unos modelos preciosos y una atención muy personal y agradable. Me encantan.»</p>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">M</div>
+              <div class="review-meta">
+                <strong class="review-author">Macarena Berjillos</strong>
+                <span class="review-date">Hace 7 años</span>
+              </div>
+              <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p class="review-text">«Diseños originales y personalizados. Se cuida hasta el más mínimo detalle.»</p>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">C</div>
+              <div class="review-meta">
+                <strong class="review-author">Carmen Ferreira</strong>
+                <span class="review-date">Hace 7 años</span>
+              </div>
+              <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p class="review-text">«Diseños muy cuidados y acorde a tu gusto.»</p>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">L</div>
+              <div class="review-meta">
+                <strong class="review-author">Lola Insa Oliva</strong>
+                <span class="review-date">Hace 7 años</span>
+              </div>
+              <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p class="review-text">«Diseños preciosos y muy originales.»</p>
+          </article>
+
+        </div>
+        <button class="review-btn review-prev" id="review-prev" aria-label="Reseña anterior">&#8592;</button>
+        <button class="review-btn review-next" id="review-next" aria-label="Reseña siguiente">&#8594;</button>
+      </div>
+
+      <div class="reviews-cta-wrap">
+        <a
+          href="https://www.google.com/maps/place/Romero+y+Linares+.+Atendemos+con+cita+previa/@37.3691769,-6.0466303,18.75z/data=!4m8!3m7!1s0xd126d939cd06ac1:0xc875423873c84ff1!8m2!3d37.3669449!4d-6.0460542!9m1!1b1!16s%2Fg%2F11f60zs45x?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener"
+          class="btn-gold"
+          id="google-reviews-btn"
+          aria-label="Ver todas las reseñas en Google"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="btn-icon" aria-hidden="true" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Nuestras reseñas en Google
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       INSTAGRAM MARQUEE — polka dot bg
+  ═══════════════════════════════════════ -->
+  <section class="instagram-section polka-bg-warm" id="instagram" aria-label="Galería de Instagram">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Síguenos</span>
+        <h2 class="section-title">
+          <svg class="ig-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          @romeroylinares
+        </h2>
+        <div class="gold-divider" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <!-- Marquee strip -->
+    <div class="marquee-outer" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track">
+        <!-- JS will duplicate for seamless loop -->
+        <div class="marquee-item"><img src="img/f1.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f2.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f3.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f4.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f5.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f6.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f7.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f8.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f9.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f010.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f11.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f12.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f13.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f14.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f15.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f16.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f17.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f18.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f19.webp" alt="" loading="lazy" /></div>
+        <div class="marquee-item"><img src="img/f20.webp" alt="" loading="lazy" /></div>
+      </div>
+    </div>
+
+    <div class="instagram-cta-wrap">
+      <a href="https://www.instagram.com/romeroylinares" target="_blank" rel="noopener" class="btn-gold" id="ig-follow-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btn-icon" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        Seguir en Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" id="contacto" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Romero y Linares" class="footer-logo" loading="lazy" />
+        <p class="footer-tagline">Alta costura flamenca.<br />Hecha con alma.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/romeroylinares" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram de Romero y Linares" id="footer-ig-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/34606590620" target="_blank" rel="noopener" class="footer-social-link" aria-label="WhatsApp de Romero y Linares" id="footer-wa-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.526 5.833L.057 23.215a.75.75 0 00.916.916l5.382-1.469A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.72 9.72 0 01-4.953-1.353l-.355-.21-3.676 1.003 1.003-3.676-.21-.355A9.72 9.72 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <h3 class="footer-section-title">Contacto</h3>
+        <ul class="footer-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="footer-icon" aria-hidden="true"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.003 3.5-4.697 3.5-8.327a8 8 0 10-16 0c0 3.63 1.556 6.326 3.5 8.327a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+            <span>Rosa Luxemburgo 2<br />Tomares, Sevilla 41940</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="footer-icon" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"/></svg>
+            <a href="tel:+34606590620" class="footer-link">606 590 620</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="footer-icon" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+            <a href="https://www.instagram.com/romeroylinares" class="footer-link" target="_blank" rel="noopener">@romeroylinares</a>
+          </li>
+        </ul>
+        <p class="footer-hours"><em>Atendemos con cita previa</em></p>
+      </div>
+
+      <div class="footer-map">
+        <h3 class="footer-section-title">Cómo llegar</h3>
+        <div class="map-wrap">
+          <iframe
+            title="Localización Romero y Linares en Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d812.6099!2d-6.0466303!3d37.3691769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d939cd06ac1%3A0xc875423873c84ff1!2sRomero%20y%20Linares%20.%20Atendemos%20con%20cita%20previa!5e0!3m2!1ses!2ses!4v1700000000000"
+            width="100%"
+            height="200"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Romero y Linares · Moda Flamenca · Tomares, Sevilla</p>
+      <p class="footer-bottom-right">Diseño exclusivo · Producción limitada</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       FLOATING BUTTONS
+  ═══════════════════════════════════════ -->
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/34606590620"
+    target="_blank"
+    rel="noopener"
+    class="fab-whatsapp"
+    id="fab-whatsapp"
+    aria-label="Contáctanos por WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.526 5.833L.057 23.215a.75.75 0 00.916.916l5.382-1.469A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.72 9.72 0 01-4.953-1.353l-.355-.21-3.676 1.003 1.003-3.676-.21-.355A9.72 9.72 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
